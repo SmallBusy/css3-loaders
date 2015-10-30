@@ -18,6 +18,8 @@
   z-index: 999;
   -webkit-transform: translateZ(0px) translate(-50%, -50%);
   transform: translateZ(0px) translate(-50%, -50%);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
 }
 .mpc_preloader_no_fixed {
   position: absolute;
@@ -99,8 +101,8 @@
   height: 150px;
   width: 150px;
   background-color: #000000;
-  -webkit-animation: mpc_preloader18 2s ease-in-out alternate infinite;
-  animation: mpc_preloader18 2s ease-in-out alternate infinite;
+  -webkit-animation: mpc_preloader18 5s ease-in-out alternate infinite;
+  animation: mpc_preloader18 5s ease-in-out alternate infinite;
 }
 .mpc_preloader18_label {
   font-size: 16px;
@@ -109,40 +111,57 @@
   top: 50%;
   left: 50%;
   z-index: 2;
-  margin-left: -30px;
-  -webkit-animation: zoom_text 2s ease-in-out alternate infinite;
-  animation: zoom_text 2s ease-in-out alternate infinite;
+  -webkit-transform: translateZ(0px) translate(-50%, -50%);
+  transform: translateZ(0px) translate(-50%, -50%);
+  -webkit-animation: zoom_text 5s ease-in-out alternate infinite;
+  animation: zoom_text 5s ease-in-out alternate infinite;
 }
 @keyframes mpc_preloader18 {
-  100% {
+  10% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  50% {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
     border-radius: 50%;
     background-color: #ffffff;
+  }
+  98% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
   }
 }
 @-webkit-keyframes mpc_preloader18 {
-  100% {
+  10% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  50% {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
     border-radius: 50%;
     background-color: #ffffff;
   }
+  98% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
 }
 @keyframes zoom_text {
-  50% {
+  25% {
     opacity: 0.2;
   }
-  100% {
+  50% {
     opacity: 1;
     color: #000000;
   }
 }
 @-webkit-keyframes zoom_text {
-  50% {
+  25% {
     opacity: 0.2;
   }
-  100% {
+  50% {
     opacity: 1;
     color: #000000;
   }
@@ -151,7 +170,6 @@
  *mpc_preloader27
  */
 .mpc_preloader27 {
-  font-family: verdana;
   font-size: 17px;
   color: #000000;
 }
